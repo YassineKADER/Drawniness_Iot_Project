@@ -1,0 +1,24 @@
+MOCK_USERS = [
+    {
+        "name": "Yassine Kader",
+        "email": "yassine.kader@transportation.com",
+        "phone": "+1-555-123-4567",
+        "password": "Driver2024!",
+        "role": "professional_driver"
+    },
+    {
+        "name": "Anouar El Gorch",
+        "email": "anouar.elgorch@logistics.com",
+        "phone": "+1-555-987-6543",
+        "password": "Driver2024!",
+        "role": "commercial_driver"
+    },
+    {
+        "name": "Fahd El Attar",
+        "email": "fahd.elattar@delivery.com",
+        "phone": "+1-555-246-8135",
+        "password": "Driver2024!",
+        "role": "delivery_driver"
+    }
+]
+

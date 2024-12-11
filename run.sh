@@ -1,0 +1,2 @@
+export OPENCV_FFMPEG_READ_ATTEMPTS=8192
+python main.py
