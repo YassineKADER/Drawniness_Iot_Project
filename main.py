@@ -10,7 +10,7 @@ import time
 
 # Load environment variables
 load_dotenv()
-arduino = serial.Serial(port="COM6", baudrate=9600, timeout=0.1)
+arduino = serial.Serial(port="/dev/ttyACM1", baudrate=9600, timeout=0.1)
 time.sleep(2)
 
 
@@ -165,7 +165,7 @@ class DrowsinessDetector:
                 event_id = self.event_streamer.send_event("drowsy", 0.8)
                 arduino.write(b"drowsy")
                 print(event_id)
-                # raise Exception()
+                raise Exception()
                 if event_id:
                     print("sos trigger")
                     self.event_streamer.send_sos("Severe Drowsiness Detected!")
