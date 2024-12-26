@@ -25,22 +25,22 @@ start_time = datetime.utcnow()
 
 # List of cities/regions in Morocco and Europe with approximate latitudes and longitudes
 morocco_locations = [
-    {"city": "Casablanca", "latitude": 33.5731, "longitude": -7.5898},
-    {"city": "Rabat", "latitude": 34.020882, "longitude": -6.84165},
-    {"city": "Marrakech", "latitude": 31.6295, "longitude": -7.9811},
-    {"city": "Fes", "latitude": 34.0333, "longitude": -5.0000},
-    {"city": "Tangier", "latitude": 35.7676, "longitude": -5.7998},
+    {"city": "Agadir", "latitude": 30.4278, "longitude": -9.5981},
+    {"city": "Oujda", "latitude": 34.6814, "longitude": -1.9076},
+    {"city": "Kenitra", "latitude": 34.2610, "longitude": -6.5802},
+    {"city": "Tetouan", "latitude": 35.5720, "longitude": -5.3729},
+    {"city": "Safi", "latitude": 32.2994, "longitude": -9.2372},
 ]
 
 europe_locations = [
-    {"city": "Paris", "latitude": 48.8566, "longitude": 2.3522},
-    {"city": "Berlin", "latitude": 52.5200, "longitude": 13.4050},
-    {"city": "London", "latitude": 51.5074, "longitude": -0.1278},
-    {"city": "Madrid", "latitude": 40.4168, "longitude": -3.7038},
-    {"city": "Rome", "latitude": 41.9028, "longitude": 12.4964},
-]
+    {"city": "Amsterdam", "latitude": 52.3676, "longitude": 4.9041},
+    {"city": "Vienna", "latitude": 48.2082, "longitude": 16.3738},
+    {"city": "Lisbon", "latitude": 38.7223, "longitude": -9.1393},
+    {"city": "Athens", "latitude": 37.9838, "longitude": 23.7275},
+    {"city": "Stockholm", "latitude": 59.3293, "longitude": 18.0686},
+]  # Combine both regions
 
-# Combine both regions
+
 all_locations = morocco_locations + europe_locations
 
 
@@ -114,4 +114,4 @@ def insert_data(num_events=1000, interval_seconds=60):
 
 
 # Insert 1000 events and corresponding SOS data with 1-minute intervals
-insert_data(num_events=300, interval_seconds=600)
+insert_data(num_events=50, interval_seconds=60)

@@ -6,10 +6,9 @@ from dotenv import load_dotenv
 from ultralytics import YOLO
 from PIL import Image
 import serial
-import time
 
-# Load environment variables
 load_dotenv()
+# need to be changed depends on the ports in your machine
 arduino = serial.Serial(port="/dev/ttyACM1", baudrate=9600, timeout=0.1)
 time.sleep(2)
 
@@ -165,7 +164,6 @@ class DrowsinessDetector:
                 event_id = self.event_streamer.send_event("drowsy", 0.8)
                 arduino.write(b"drowsy")
                 print(event_id)
-                raise Exception()
                 if event_id:
                     print("sos trigger")
                     self.event_streamer.send_sos("Severe Drowsiness Detected!")
@@ -183,7 +181,7 @@ def main():
     # Get configuration from environment variables
     api_url = os.getenv("API_URL", "http://localhost:8000")
     stream_url = os.getenv("RTMP_STREAM_URL", "rtmp://localhost:1935/live/1")
-    model_path = os.getenv("MODEL_PATH", "best_with_100_epochs.pt")
+    model_path = os.getenv("MODEL_PATH", "./yolo/best_with_100_epochs.pt")
 
     # Authentication from environment variables
     email = os.getenv("LOGIN_EMAIL", "yassine.kader@transportation.com")
