@@ -1,7 +1,7 @@
 # Real-Time Drowsiness Detection & Driver Safety System
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/80207770" alt="Project Banner" width="800">
+  <img src="https://avatars.githubusercontent.com/u/80207770" alt="Project Banner" width="200">
 </p>
 
 ## Overview
