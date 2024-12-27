@@ -26,6 +26,7 @@ void setup() {
 
   // Start with motors off and LED off
   stopMotors();
+  blinkLED();
   digitalWrite(LED, LOW);
 }
 
