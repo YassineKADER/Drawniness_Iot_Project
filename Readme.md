@@ -1,7 +1,7 @@
 # Real-Time Drowsiness Detection & Driver Safety System
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/80207770" alt="Project Banner" width="200">
+  <img src="https://avatars.githubusercontent.com/u/80207770" alt="Project Banner" width="199">
 </p>
 
 ## Overview
@@ -179,4 +179,5 @@ The Arduino code `arduino_code/main.ino` controls the physical alerts using an L
 
 <p align="center">
   Made with ❤️ by Yassine Kader (EROS)
+
 </p>
